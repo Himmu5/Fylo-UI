@@ -4,10 +4,12 @@ module.exports = {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors :{
-        darkBlue : "#202A3c"
+        darkBlue : "#1C2341",
+        darkBluePlue : "#0B1523"
       } , 
       backgroundImage: {
         'main': "url('./public/bg.svg')"

@@ -6,19 +6,25 @@ import Goals from './Component/Pages/Goals'
 import SignUp from './Component/Pages/SignUp'
 import Testimonial from './Component/Pages/Testimonial'
 import Nav from './Component/Ui-Component/Nav'
+import { ModeContext } from './Component/Context/Context'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const [mode, setMode] = useState<string>("light")
 
   return (
-    <div className="relative">
-      <Nav />
-      <Body />
-      <Features />
-      <Goals />
-      <Testimonial />
-      <SignUp />
-      <Footer />
+    <div className={"relative " +mode } >
+      <div className=' dark:bg-darkBlue dark:text-white'>
+        <ModeContext.Provider value={{mode , setMode}}>
+          <Nav />
+          <Body />
+          <Features />
+          <Goals />
+          <Testimonial />
+          <SignUp name="Sign Up"/>
+          <Footer />
+        </ModeContext.Provider>
+      </div>
     </div>
   )
 }

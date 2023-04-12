@@ -9,7 +9,7 @@ type P = {
 }
 
 const Message: FC<P> = ({ TestDetail }) => {
-  return <div className=' py-5 px-6 rounded-md shadow-md space-y-3 bg-blue-50 '>
+  return <div className=' py-5 px-6 rounded-md shadow-md space-y-3 bg-blue-50 dark:bg-darkBluePlue'>
     <h1 className='text-lg '>{TestDetail.message}</h1>
     <div className='flex gap-1 text-sm'>
       <img className='h-10 w-10 rounded-full ' src={TestDetail.pic} alt="" />

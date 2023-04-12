@@ -9,7 +9,7 @@ import { HiOutlineMail } from 'react-icons/hi'
 
 type P = {}
 const Footer: FC<P> = () => {
-  return <div className='mt-10 bg-darkBlue text-white p-3 pt-40 pb-20  '>
+  return <div className='mt-10 bg-darkBluePlue text-white p-3 pt-40 pb-20 rounded-md shadow-2xl '>
     <img src={Logo} alt="" className='  sm:px-6' />
 
     <div className="sm:flex justify-between space-y-6 mt-3">
